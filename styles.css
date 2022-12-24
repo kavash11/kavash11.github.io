@@ -5,3 +5,11 @@
 .cardimage:hover {
     filter:opacity(75%);
 }
+
+.bg-purple-400 {
+    background-color: rgba(105, 41, 202, 0.489);
+}
+
+.bg-purple-500 {
+    background-color: rgba(16, 7, 31, 0.874);
+}
