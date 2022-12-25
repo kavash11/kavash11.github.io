@@ -1,3 +1,8 @@
+.card{
+    color: #665866;
+
+}
+
 .card:hover {
     box-shadow: 6px 6px 12px 0 rgba(105, 41, 202, 0.489);
 }
@@ -6,10 +11,36 @@
     filter:opacity(75%);
 }
 
-.bg-purple-400 {
-    background-color: rgba(105, 41, 202, 0.489);
+.bg-salt-box {
+    background-color: #665866;
+}
+
+.bg-bossanova {
+    background-color: #443D45;
 }
 
 .bg-purple-500 {
-    background-color: rgba(16, 7, 31, 0.874);
+    background-color: #170322;
 }
+
+.bg-lilac {
+    background-color: #d8cce7;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgba(127, 56, 242, 0.874);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .click {
+    margin: auto;
+  }
