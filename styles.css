@@ -1,10 +1,6 @@
-.card{
-    color: #665866;
-
-}
-
 .card:hover {
     box-shadow: 6px 6px 12px 0 rgba(105, 41, 202, 0.489);
+    text-decoration-color: #665866;
 }
 
 .cardimage:hover {
@@ -36,11 +32,27 @@
   
   .close:hover,
   .close:focus {
-    color: rgba(127, 56, 242, 0.874);
+    color: #665866;
     text-decoration: none;
     cursor: pointer;
   }
 
   .click {
     margin: auto;
+  }
+
+  .btn-modal {
+    background-color: #d8cce7;
+    border-radius: 8px;
+    padding: 14px 40px;
+    text-decoration-color: black;
+    
+  }
+
+  .btn-modal:hover {
+    background-color: #665866;
+    border-radius: 8px;
+    padding: 14px 40px;
+    color: #d8cce7;
+    
   }
