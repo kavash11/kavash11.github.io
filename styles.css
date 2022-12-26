@@ -23,15 +23,15 @@
     background-color: #d8cce7;
 }
 
-.close {
+.modalClose {
     color: black;
     float: right;
     font-size: 30px;
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+  .modalClose:hover,
+  .modalClose:focus {
     color: #665866;
     text-decoration: none;
     cursor: pointer;
