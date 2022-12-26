@@ -23,6 +23,11 @@
     background-color: #d8cce7;
 }
 
+.col-header {
+  padding-top:20%;
+  padding-bottom:20%;
+}
+
 .modalClose {
     color: black;
     float: right;
