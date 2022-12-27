@@ -23,11 +23,6 @@
     background-color: #d8cce7;
 }
 
-.col-header {
-  padding-top:20%;
-  padding-bottom:20%;
-}
-
 .modalClose {
     color: black;
     float: right;
@@ -60,4 +55,28 @@
     padding: 14px 40px;
     color: #d8cce7;
     
+  }
+
+
+
+  .col-header {
+    padding-top:10%;
+    padding-bottom:10%;
+  }
+
+  .btn-dark {
+    background-color: #170322;
+    border-radius: 8px;
+    padding: 1vw 2vw;
+    color: #d8cce7;
+    font-size:1.2vw;
+    
+  }
+
+  .btn-dark:hover {
+    background-color: #665866;
+    border-radius: 8px;
+    padding: 1vw 2vw;
+    color: #d8cce7;
+    font-size:1.2vw;
   }
