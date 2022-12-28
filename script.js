@@ -25,3 +25,12 @@ window.onclick = function(event) {
     currentModal.style.display = "none";
   }
 }
+
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.hidden = false;
+  copyText.select();
+  document.execCommand("copy");
+  copyText.hidden = true;
+  alert("Copied email address to clipboard!");
+}

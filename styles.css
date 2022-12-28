@@ -85,3 +85,14 @@
     padding-top:5%;
     padding-bottom:5%;
   }
+
+  .icon {
+    color:#d8cce7;
+    font-size: 2.5em;
+  }
+
+  .icon:hover {
+    color: #665866;
+  }
+
+
