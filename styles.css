@@ -102,5 +102,6 @@
   .nav-item {
     color:#d8cce7;
   }
-
-
+  body {
+    padding-top: 1rem;
+  }
