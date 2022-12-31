@@ -1,12 +1,15 @@
 var modals = document.getElementsByClassName("modal");
+var video = document.getElementsByClassName("video");
 var modalOpenBtn = document.getElementsByClassName("modalOpenBtn");
 var currentModal = null;
+var vid = null;
 
 // Function to open modal by id
 function openModal(id) {
   for (i = 0; i < modals.length; i++) {
     if (modals[i].getAttribute('id') == id) {
       currentModal = modals[i];
+      vid = video[i];
       currentModal.style.display = "block";
       break;
     }
@@ -23,6 +26,7 @@ modalOpenBtn.onclick = function() {
 window.onclick = function(event) {
   if (event.target == currentModal || event.target.getAttribute('class') == 'modalClose') {
     currentModal.style.display = "none";
+    vid.pause();
   }
 }
 
@@ -34,3 +38,6 @@ function myFunction() {
   copyText.hidden = true;
   alert("Copied email address to clipboard!");
 }
+
+
+
