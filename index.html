@@ -18,13 +18,13 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg sticky-top bg-lilac py-2">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span>
             <ion-icon name="menu-outline" style="color:#170322;"></ion-icon>
           </span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse border-0" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" href="#about" style="color:#170322;">About Me</a>
@@ -125,7 +125,7 @@
             </div>
 
             <div class="col">
-              <a  type="button" id="modalA" class="modalOpenBtn" onclick="openModal('modalA')" style = "text-decoration:none;"> <!--to open modal-->
+              <a  type="button" id="modalC" class="modalOpenBtn" onclick="openModal('modalC')" style = "text-decoration:none;"> <!--to open modal-->
                 <div class="card border-0" style = "background-color: #d8cce7;">
                   <div class ="projectCard">
                         <div class="cardimage">
@@ -138,7 +138,7 @@
             </div>
 
             <div class="col">
-              <a  type="button" id="modalA" class="modalOpenBtn" onclick="openModal('modalA')" style = "text-decoration:none;"> <!--to open modal-->
+              <a  type="button" id="modalD" class="modalOpenBtn" onclick="openModal('modalD')" style = "text-decoration:none;"> <!--to open modal-->
                 <div class="card border-0" style = "background-color: #d8cce7;">
                   <div class ="projectCard">
                         <div class="cardimage">
@@ -151,7 +151,7 @@
             </div>
 
             <div class="col">
-              <a  type="button" id="modalA" class="modalOpenBtn" onclick="openModal('modalA')" style = "text-decoration:none;"> <!--to open modal-->
+              <a  type="button" id="modalE" class="modalOpenBtn" onclick="openModal('modalE')" style = "text-decoration:none;"> <!--to open modal-->
                 <div class="card border-0" style = "background-color: #d8cce7;">
                   <div class ="projectCard">
                         <div class="cardimage">
@@ -164,7 +164,7 @@
             </div>
 
             <div class="col">
-              <a  type="button" id="modalA" class="modalOpenBtn" onclick="openModal('modalA')" style = "text-decoration:none;"> <!--to open modal-->
+              <a  type="button" id="modalF" class="modalOpenBtn" onclick="openModal('modalF')" style = "text-decoration:none;"> <!--to open modal-->
                 <div class="card border-0" style = "background-color: #d8cce7;">
                   <div class ="projectCard">
                         <div class="cardimage">
@@ -177,7 +177,7 @@
             </div>
 
             <div class="col">
-              <a  type="button" id="modalA" class="modalOpenBtn" onclick="openModal('modalA')" style = "text-decoration:none;"> <!--to open modal-->
+              <a  type="button" id="modalG" class="modalOpenBtn" onclick="openModal('modalG')" style = "text-decoration:none;"> <!--to open modal-->
                 <div class="card border-0" style = "background-color: #d8cce7;">
                   <div class ="projectCard">
                         <div class="cardimage">
@@ -237,21 +237,31 @@
 
 
 <!-- Modals -->
-<div id="modalA" class="modal">
+<div id="modalC" class="modal"> <!--finite state machine-->
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
     <div class="modal-content">
       <div class="modal-header" style = "background-color: #d8cce7;">
-        <h5 class="modal-title text-black">Modal title</h5> <!--modal title-->
+        <h5 class="modal-title text-black">Finite State Machine</h5> <!--modal title-->
         <span class="modalClose" type="button" aria-label="Close">&times;</span> <!--button to close modal-->
       </div>
       <div class="modal-body bg-purple-500"> <!--modal body-->
-        <p class="text-white">How do I pop open the modal using a link, instead of a button? I don't want the action to be a button, I want it to be an an href link, a working example would be very much appreciated. The full code is provided below. Buttons suck, links rule.
-
-          As of right now, I have the code as a button to open the modal, and buttons are pre styles, I just want to open the modal using a regualr link that I have for my main menu, so as you can see, I dont want to put a button in the main menu, because the main menu has links that are styled for the menu.</p>
+        <p class="text-white">
+          The goal of this project was to design a digital circuit that displays my student number (400307169) on loop using sequential logic design. I began by converting the decimal numbers to Boolean form and generated a state transition table to determine the inputs for the JK flipflops. I then created K-maps based off the state transition table to design Boolean logic expressions for the inputs to each JK flipflop. I proceeded to use Multisim to build a simulation of the circuit using the logic expressions with a combination of OR/AND gates. I attached a seven segment display to verify that the logic correctly produces the student number.
+          <br>
+          
+          <img src="images/dp.png" class="img-fluid rounded mx-text-center d-flex justify-content-center align-items-center" style="padding-top:1vw;" alt="...">
+          <br>
+          Finally, I built a physical model of my design using a SoulBay power supply and a transistor to make a clock signal. Throughout the simulation and physical build processes I encountered many challenges due to the complexity of the circuit. I troubleshooted these challenges mainly using the oscilloscope of a Hantek to check for incorrect or failed connections.
+        </p>
+        <br>
+        <video controls class="d-flex justify-content-center align-items-center mx-auto">
+          <source src="files/finite_state_machine.mov" type="video/mp4">
+        </video>
+        <br>
         <div class="col border-0  d-flex justify-content-center align-items-center">
-          <a href="https://stackoverflow.com/" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
+          <a href="files/finite_state_machine.zip" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
             <button class="btn-modal" type="button" href="#">
-              Center Center
+              Get Project Files
             </button>
           </a>
         </div>
@@ -260,21 +270,52 @@
   </div>
 </div>
 
-  <div id="modalB" class="modal">
+<div id="modalD" class="modal"> <!--intraocular syringe-->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header" style = "background-color: #d8cce7;">
+        <h5 class="modal-title text-black">Intraocular Syringe</h5> <!--modal title-->
+        <span class="modalClose" type="button" aria-label="Close">&times;</span> <!--button to close modal-->
+      </div>
+      <div class="modal-body bg-purple-500"> <!--modal body-->
+        <p class="text-white">
+          Using AutoDesk Inventor, my team designed an intraocular syringe that pediatric ophthalmologists can use to administer anti-VEGF medication to premature infants suffering from retinopathy. The design incorporates an ocular extension that is placed around the infant's eyelid to stabilize the syringe. In addition, an adjustable pedal is used to depress the plunger which reduces the movement of the thumb while administering medication and increases overall accuracy.
+          <br>
+          <br>
+          Below is my team's presentation that dives into the problem, explains our design iteration process, some challenges we faced and limitations in our design.
+        </p>
+        <br>
+        <video controls class="d-flex justify-content-center align-items-center">
+          <source src="files/Team33.mp4" type="video/mp4">
+        </video>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="modalE" class="modal"> <!--fall-d-tech-->
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
       <div class="modal-content">
         <div class="modal-header" style = "background-color: #d8cce7;">
-          <h5 class="modal-title text-black">Modal title</h5> <!--modal title-->
+          <h5 class="modal-title text-black">Fall D-Tech</h5> <!--modal title-->
           <span class="modalClose" type="button" aria-label="Close">&times;</span> <!--button to close modal-->
         </div>
         <div class="modal-body bg-purple-500"> <!--modal body-->
-          <p class="text-white">How do I pop open the modal using a link, instead of a button? I don't want the action to be a button, I want it to be an an href link, a working example would be very much appreciated. The full code is provided below. Buttons suck, links rule.
-  
-            As of right now, I have the code as a button to open the modal, and buttons are pre styles, I just want to open the modal using a regualr link that I have for my main menu, so as you can see, I dont want to put a button in the main menu, because the main menu has links that are styled for the menu.</p>
+          <p class="text-white">
+            Fall D-Tech is a clip-on device that can be attached to a patient's belt to track how often they fall and alert a caregiver when they have fallen. The device uses an orientation sensor to measure the patient's acceleration towards the ground and determine if they are falling. My team coded the algorithm using Python and we designed the device using AutoDesk Inventor.
+            <br>
+            <br>
+            Check out the CAD model below!
+          </p>
+          <br>
+          <video controls class="d-flex justify-content-center align-items-center">
+            <source src="files/Team37_DP3_DeviceDesign.mp4" type="video/mp4">
+          </video>
           <div class="col border-0  d-flex justify-content-center align-items-center">
-            <a href="https://stackoverflow.com/" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
+            <a href="files/Team37_DP3_Python_Program_Files.zip" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
               <button class="btn-modal" type="button" href="#">
-                Center Center
+                Get Code
               </button>
             </a>
           </div>
@@ -283,6 +324,63 @@
     </div>
   </div>
 
+  <div id="modalF" class="modal"> <!--rescue band-->
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style = "background-color: #d8cce7;">
+          <h5 class="modal-title text-black">Rescue Band</h5> <!--modal title-->
+          <span class="modalClose" type="button" aria-label="Close">&times;</span> <!--button to close modal-->
+        </div>
+        <div class="modal-body bg-purple-500"> <!--modal body-->
+          <p class="text-white">
+            In 36 hours, my team and I designed Rescue Band and placed first at the Ontario Tech University's Designathon using SolidWorks. Rescue Band emits low-intensity infrared light through the thin layer of skin on the wrist to the blood vessels. Photodetectors on the band will detect the light intensity in the bloodstream and will use frequency demodulation to calculate respiratory frequency.
+            <br>
+            <br>
+            If the heart rate is within 150-250 bpm or the respiratory rate is within 20-40 breaths/min, the band will determine that the user may be experiencing a panic attack and will ask the user if they need assistance through a mini speaker. The user can then press the SOS button to contact 911 or the guardian button to contact an immediate family member for help.
+          </p>
+          <div class="col border-0  row row-cols-2 g-4 d-flex justify-content-center align-items-center">
+            <img src="images/rescue_band1.png" class="img-fluid rounded mx-text-center " style="padding-top:1vw;" alt="...">
+            <img src="images/rescue_band2.png" class="img-fluid rounded mx-text-center " style="padding-top:1vw;" alt="...">
+          </div>
+          <br>
+          <div class="col border-0  d-flex justify-content-center align-items-center">
+            <a href="files/Rescue Band (1).pptx" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
+              <button class="btn-modal" type="button" href="#">
+                Get Presentation
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalG" class="modal"> <!--arth-grow-plasty-->
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style = "background-color: #d8cce7;">
+          <h5 class="modal-title text-black">Arth-GROW-Plasty</h5> <!--modal title-->
+          <span class="modalClose" type="button" aria-label="Close">&times;</span> <!--button to close modal-->
+        </div>
+        <div class="modal-body bg-purple-500"> <!--modal body-->
+          <p class="text-white">
+            Arth-GROW-Plasty is a custom-made hip implant that replaces the femoral bone in a patient suffering from Legg-Calve-Perthes and promotes bone regeneration. My team modelled this assembly model in AutoDesk Inventor and we conducted a materials selection procedure to identify the most effective materials for the implant.
+          </p>
+          <div class="col border-0 d-flex justify-content-center align-items-center">
+            <img src="images/hip_implant.jpg" class="img-fluid rounded mx-text-center " style="padding-top:1vw;" alt="...">
+          </div>
+          <br>
+          <div class="col border-0  d-flex justify-content-center align-items-center">
+            <a href="files/arth-grow-plasty.pptx" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
+              <button class="btn-modal" type="button" href="#">
+                Get Presentation
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
