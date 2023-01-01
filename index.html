@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <script defer src="script.js"></script>
-    <title>Kavya Sundaresan's Porfolio</title>
+    <title>Kavya Sundaresan's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
@@ -114,7 +114,7 @@
           </div>
 
             <div class="col">
-              <a  type="button" id="modalB" class="modalOpenBtn" onclick="openModal('modalB')" style = "text-decoration:none;"> <!--to open modal-->
+              <a  type="button" id="modalA" class="modalOpenBtn" onclick="openModal('modalA')" style = "text-decoration:none;"> <!--to open modal-->
                 <div class="card border-0" style = "background-color: #d8cce7;">
                   <div class ="projectCard">
                         <div class="cardimage">
@@ -239,69 +239,6 @@
 
 
 <!-- Modals -->
-<div id="modalA" class="modal"> <!--pacemaker-->
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-    <div class="modal-content">
-      <div class="modal-header" style = "background-color: #d8cce7;">
-        <h5 class="modal-title text-black">Pacemaker</h5> <!--modal title-->
-        <span class="modalClose" type="button" aria-label="Close">&times;</span> <!--button to close modal-->
-      </div>
-      <div class="modal-body bg-purple-500"> <!--modal body-->
-        <p class="text-white">
-          Using Simulink and Python, my team designed the software to be used by a circuit board based on an FRDM K-64F to simulate a pacemaker. The back end was developed using Simulink, and the front end GUI was built in Python. In the Simulink environment, we designed the functionality of 8 pacing modes using Stateflows, including inhibiting modes which prohibit the pacemaker from pacing if a natural pulse is sensed in that chamber of the heart.
-          <br>
-          <br>
-          In addition, we designed rate adaptive modes which adjust the pacing rate based on an onboard accelerometer’s activity level, simulating physical activities such as walking, jogging, and running. The GUI allows the practitioner to save and track the parameters of up to 10 patients’ pacemakers, using a user-based login screen. Once a user is logged in, they may dynamically adjust programmable parameters such as rate limit, pulse width, and pacing mode in real time and send those changes to the pacemaker using serial communication. We then verify that the parameters are properly set by echoing them back to the DCM and monitoring them.
-        </p>
-        <div class="col border-0  row row-cols-1 row-cols-md-3 g-2 d-flex justify-content-center align-items-center">
-          <img src="images/pm1.png" class="img-fluid rounded mx-text-center " style="padding-top:1vw;" alt="...">
-          <img src="images/pm2.png" class="img-fluid rounded mx-text-center " style="padding-top:1vw;" alt="...">
-          <img src="images/pm3.png" class="img-fluid rounded mx-text-center " style="padding-top:1vw;" alt="...">
-        </div>
-        <br>
-        <div class="col border-0  d-flex justify-content-center align-items-center">
-          <a href="https://github.com/EthanCav/3K04" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
-            <button class="btn-modal" type="button" href="#">
-              View Project
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="modalB" class="modal"> <!--flicky-->
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-    <div class="modal-content">
-      <div class="modal-header" style = "background-color: #d8cce7;">
-        <h5 class="modal-title text-black">Flicky 2.0</h5> <!--modal title-->
-        <span class="modalClose" type="button" aria-label="Close">&times;</span> <!--button to close modal-->
-      </div>
-      <div class="modal-body bg-purple-500"> <!--modal body-->
-        <p class="text-white">
-          My team and I developed the winning low-fidelity prototype in 6 hours that simulates the disposal of nuclear waste into waste bins at the McMaster Engineering Competition (MEC). Flicky 2.0 is an autonomous device that can load three ping pong balls and launch at three waste bins with specified locations. The firing mechanism consists of a spinning sledgehammer-styled paddle powered by 2 wheel motors rotating in opposite directions to produce a large torque that causes the ball to launch after it falls onto the paddle. We used a servo motor in conjunction with an Arduino to rotate the device for autonomous loading of the ping pong balls and simultaneously aim at the waste bin.
-          <br>
-          <br>
-          The video below demonstrates Flicky 2.0's functionality and quick launch.
-        </p>
-        <br>
-        <video controls class="video d-flex justify-content-center align-items-center mx-auto" id="video">
-          <source src="files/flicky.mov" type="video/mp4">
-        </video>
-        <br>
-        <div class="col border-0  d-flex justify-content-center align-items-center">
-          <a href="https://github.com/kabirsinghgupta/engcomp2022" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
-            <button class="btn-modal" type="button" href="#">
-              View Project
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div id="modalC" class="modal"> <!--finite state machine-->
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
     <div class="modal-content">
