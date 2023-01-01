@@ -62,6 +62,20 @@
     padding-bottom:8vw;
   }
 
+  .btn-light {
+    background-color: #d8cce7;
+    border-radius: 8px;
+    padding: 0.5vw 2vw;
+    text-decoration-color: black;
+    font-size:1.2vw;
+  }
+
+  .btn-light:hover {
+    background-color: #665866;
+    border-radius: 8px;
+    color: #d8cce7;
+  }
+
   .btn-dark {
     background-color: #170322;
     border-radius: 8px;
