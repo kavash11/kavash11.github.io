@@ -65,9 +65,9 @@
   .btn-light {
     background-color: #d8cce7;
     border-radius: 8px;
-    padding: 0.5vw 2vw;
+    padding: 0.5em 2em;
     text-decoration-color: black;
-    font-size:1.2vw;
+    font-size:1.2em;
   }
 
   .btn-light:hover {
