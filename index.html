@@ -102,6 +102,19 @@
       <h1 class="text-center" style="font-family:Arial; color:#d8cce7; padding-top:3vw; padding-bottom:1.2vw;">My Projects</h1>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4"> <!--Setting Max 4 projects on screen, mid 2, min 1-->
 
+          <div class="col"> <!--wall-e-->
+            <a  type="button" id="modalH" class="modalOpenBtn" onclick="openModal('modalH')" style = "text-decoration:none;"> <!--to open modal-->
+              <div class="card border-0" style = "background-color: #d8cce7;">
+                <div class ="projectCard">
+                      <div class="cardimage">
+                          <img src="images/pacemaker.png" class="img-fluid rounded mx-text-center" alt="..."> <!--project image-->
+                      </div>
+                      <h5 class="card-title text-center text-black h-15 ">Wall-E 2.0</h5> <!--project title-->
+                </div>
+              </div>
+            </a>
+          </div>
+
           <div class="col"> <!--pacemaker-->
             <a  type="button" id="modalA" class="modalOpenBtn" onclick="openModal('modalA')" style = "text-decoration:none;"> <!--to open modal-->
               <div class="card border-0" style = "background-color: #d8cce7;">
@@ -241,7 +254,37 @@
 
 
 <!-- Modals -->
-
+<div id="modalH" class="modal"> <!--flicky-->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header" style = "background-color: #d8cce7;">
+        <h5 class="modal-title text-black">Wall-E 2.0</h5> <!--modal title-->
+        <span class="modalClose" type="button" aria-label="Close">&times;</span> <!--button to close modal-->
+      </div>
+      <div class="modal-body bg-purple-500"> <!--modal body-->
+        <p class="text-white">
+          My team and I represented McMaster and placed 4th in the 2023 Ontario Engineering Competition. In 6 hours we developed a low-fidelity prototype of an organization robot that can pick up two different sized blocks and place them into the same colored bin. We designed the 3D model of the robot using AutoDesk Inventor. The robot consists of an RGB sensor that detects the color of the block and then searches for the same colored bin to place the block in. The grabbing mechanism consists of an arm that moves up and down using a servo motor and has an adhesive at the edge to pick up the block. The block is dropped by increasing the frequency of the arm's motion such that it vigorously shakes and drops the block.
+          <br>
+          <br>
+          Next steps include implementing an ultrasonic sensor to detect the location of a block and bin autonomously. We also aim to add a servo motor to change the grabbing mechanism to that of a gripper for a more practical solution. The gripper will consist of two popsicle stick fingers with one side attached to the servo motor that will pinch and release the other popsicle stick finger to grab/release the block.
+        </p>
+        <br>
+        <div class="col border-0  row row-cols-2 g-4 d-flex justify-content-center align-items-center">
+          <img src="images/rescue_band1.png" class="img-fluid rounded mx-text-center " style="padding-top:1vw;" alt="...">
+          <img src="images/rescue_band2.png" class="img-fluid rounded mx-text-center " style="padding-top:1vw;" alt="...">
+        </div>
+        <br>
+        <div class="col border-0  d-flex justify-content-center align-items-center">
+          <a href="https://github.com/kabirsinghgupta/engcomp2022" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
+            <button class="btn-modal" type="button" href="#">
+              View Project
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="modalB" class="modal"> <!--flicky-->
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
