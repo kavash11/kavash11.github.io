@@ -107,7 +107,7 @@
               <div class="card border-0" style = "background-color: #d8cce7;">
                 <div class ="projectCard">
                       <div class="cardimage">
-                          <img src="images/gaitsense.png" class="img-fluid rounded mx-text-center" alt="..." height="500px"> <!--project image-->
+                          <img src="images/gaitsense (1).png" class="img-fluid rounded mx-text-center" alt="..."> <!--project image-->
                       </div>
                       <h5 class="card-title text-center text-black h-15 ">GaitSense</h5> <!--project title-->
                 </div>
@@ -261,13 +261,43 @@
 
 <!--footer-->
 <div class="bg-purple-500">
-  <p class="text-center mb-0" style="color:#d8cce7;">Updated January 2023</p>
+  <p class="text-center mb-0" style="color:#d8cce7;">Updated September 2023</p>
 </div>
 
 
 
 <!-- Modals -->
-
+<div id="modalI" class="modal"> <!--GaitSense-->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header" style = "background-color: #d8cce7;">
+        <h5 class="modal-title text-black">GaitSense</h5> <!--modal title-->
+        <span class="modalClose" type="button" aria-label="Close">&times;</span> <!--button to close modal-->
+      </div>
+      <div class="modal-body bg-purple-500"> <!--modal body-->
+        <p class="text-white">
+          I independently built a low-fidelity prototype  to monitor the improvement in gait of cerebral palsy patients post surgery. Cerebral palsy patients walk with an Equinas gait characterized by hyperflexion of the hip and knees as well as toe walking. In simpler terms, they walk on their toes in a crouched position. The goal of the GaitSense was to allow doctors and physiotherapists to monitor a patient’s gait remotely by analyzing their hip flexion, knee flexion, toe pressure and heel pressure. 
+          <br>
+          <br>
+          I independently built GaitSense using an arduino, two BNO055 sensors and two force sensitive resistors (FSR). The design consists of a band around the upper thigh with a housing for the arduino and power source. Another band with the first BNO055 sensor is placed just below to measure hip flexion in Euler coordinates. A third band is placed at the knee with the second BNO055 sensor to measure knee flexion. There is a foot sole with a strap to attach to the foot the way one would wear a sandal. There is an FSR where the big toe would come in contact with the sole and an FSR at the heel to measure the force exerted by the toes and the heel. The data from the sensors is communicated from the Arduino via bluetooth serial communication to a Python GUI that graphs the live data. 
+        </p>
+        <br>
+        <video controls class="video d-flex justify-content-center align-items-center" id="video">
+          <source src="files/gaitsense.mp4" type="video/mp4">
+        </video>
+        <br>
+        <br>
+        <div class="col border-0  d-flex justify-content-center align-items-center">
+          <a href="https://github.com/kavash11/GaitSense" style = "text-decoration:none;" target="_blank"> <!--button to view project-->
+            <button class="btn-modal" type="button" href="#">
+              View Project
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="modalB" class="modal"> <!--flicky-->
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
@@ -508,6 +538,8 @@
       </div>
     </div>
   </div>
+
+
 
 
   <!--ADD NEW MODALS HERE-->
